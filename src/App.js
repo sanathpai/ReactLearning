@@ -18,10 +18,12 @@ const App = () => {
   // ]);
   //below usage of jsx
   return (
-    <div>
-      <h1 id="something-important">Adopt-me!</h1>
-      <SearchParams />
-    </div>
+    <React.StrictMode>
+      <div>
+        <h1 id="something-important">Adopt-me!</h1>
+        <SearchParams />
+      </div>
+    </React.StrictMode>
   );
 };
 render(<App />, document.getElementById("root"));
